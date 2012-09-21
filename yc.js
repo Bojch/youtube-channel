@@ -118,8 +118,11 @@
 })();
 
 $(function() {
+    var channel = $('#youtube-channel').attr('channel');
+    var max = $('#youtube-channel').attr('max');
+    
     $('#youtube-channel').youtube_channel({
-        user: 'jedelbi',
-        max:10
+        user: channel,
+        max: max
     });
 });
